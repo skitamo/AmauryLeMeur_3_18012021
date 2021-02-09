@@ -1,0 +1,85 @@
+
+.inputBox{
+    display: flex;
+    justify-content: center;
+    background-color:darken($color-back, 5);
+    margin-top: 70px;
+
+    input{
+        width: 40%;
+        display: block;
+        padding: 15px 15px;
+        border: none;
+        background-color:darken($color-back, 5);
+        @include tablette{
+            background-color:darken($color-back, 10);
+            text-align: center;
+            width: 370px;
+        }
+    }
+    .localisation{
+       padding: 15px 0;
+    }
+}
+
+/* ----   EXPLORER ----*/
+
+.explorer{
+    text-align: center;
+    padding: 0 $gutter;
+    padding-top: 0;
+    padding-bottom: 50px;
+    background-color: $color-back;
+  
+     h2{
+        width: 80%;
+        margin: auto;
+        padding-top: 40px;
+    }
+     p{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }   
+}
+
+/* -----  FONCTIONNEMENT ----*/
+
+.fonctionnement{
+    padding: 50px $gutter ;
+    padding-bottom: 40px;
+    @include tablette{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+        
+    }
+
+    h2{
+        padding-bottom: 20px;
+        @include tablette{
+            width: 100%;
+            text-align: center;
+        }
+    }   
+}
+
+/* ---- RESTURANT ----*/
+
+.indexRestaurant{
+    background-color: $color-back;
+    padding: 0px $gutter;
+    padding-bottom: 50px;
+    @include tablette{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+    }
+
+    h2{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        @include tablette{
+            width: 100%;
+        }
+    }
+}
