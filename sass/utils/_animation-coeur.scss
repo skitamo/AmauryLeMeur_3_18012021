@@ -1,0 +1,23 @@
+.coeurBox{
+    position: relative;
+
+    &__coeur{
+        font-size: 1.5em;
+        background: linear-gradient(45deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);    
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+
+        &::after{
+            content: '\f004';
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            color: black;
+            transition: .3s;  
+        }
+        &:hover::after{
+            opacity: 0;
+        }
+    }
+}
