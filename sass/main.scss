@@ -1,0 +1,22 @@
+
+@import "utils/_mixins.scss";
+
+@import "base/_reset.scss";
+@import "base/_typo.scss";
+
+@import "utils/_variables.scss";
+@import "utils/_loader.scss";
+@import "utils/_animation-coeur.scss";
+@import "utils/_animation-cardAppear.scss";
+
+@import "component/_button.scss";
+@import "component/_cards-plats.scss";
+@import "component/_card-fonctionnement.scss";
+@import "component/_card-restaurant.scss";
+
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+
+@import "pages/_index.scss";
+@import "pages/_menu.scss";
+
