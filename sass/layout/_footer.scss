@@ -1,0 +1,32 @@
+footer{
+    padding: $gutter;
+    padding-bottom: 30px;
+    color: white;
+    background-color: darken($color-back,75);
+    
+    h2{
+        color: white;
+        font-family: Shrikhand, sans-serif ;
+        font-size: 1.15em;
+        padding-bottom: 15px;
+        @include tablette{
+            text-align: center;
+
+        }
+    }
+    li{
+       display: block;
+       @include tablette{
+        text-align: center;
+       }
+        padding: 5px 0;
+    }
+    a{
+        color: white;
+        font-weight: 400;
+    }
+    i{
+        position: relative;
+        width: 30px;
+    } 
+}
