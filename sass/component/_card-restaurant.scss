@@ -1,0 +1,63 @@
+.indexRestaurant__card{
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    max-width: 370px;
+    @include tablette {
+        max-width: 370px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nouveau{
+        position: absolute;
+        right: 15px;
+        top:20px;
+        padding: 6px 10px;
+        background:$color-tertiary;
+        color: darken($color-tertiary,40);
+        border-radius: 2px;
+    }
+    img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    h2{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        @include tablette{
+            width: 100%;
+        }
+    }
+    p{
+        font-size: 1.15em;
+    }
+    .indexRestaurant__explication{
+        position: relative;
+        top: -2px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-radius: 0 0 20px 20px;
+        background-color: white;
+        margin: 0;
+
+        &__col1{
+            padding-left: 15px;
+            line-height: 1.4;
+        }
+        &__col2{
+            padding-right: 15px;
+        }
+        .coeurBox{
+            padding-right: 15px;
+            padding-top: 5px;
+            &__coeur::after{
+                background: white;
+            }
+        }
+    }
+
+}
