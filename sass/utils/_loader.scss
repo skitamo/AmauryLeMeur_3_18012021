@@ -1,55 +1,78 @@
 .loader {
-    animation: spin 2s infinite linear;
-    border: solid 2vmin transparent;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin: -25px 0 0 -25px;
+    border: 2px solid transparent;
+    border-top-color: #9356DC;
     border-radius: 50%;
-    border-right-color: #09f;
-    border-top-color: #09f;
-    box-sizing: border-box;
-    height: 20vmin;
-    left: calc(50% - 10vmin);
-    position: fixed;
-    top: calc(50% - 10vmin);
-    width: 20vmin;
-    z-index: 1;
+    -webkit-animation: spinner 2s linear infinite;
+    animation: spinner 2s linear infinite;
     &:before {
-        animation: spin 3s infinite linear;
-        border: solid 2vmin transparent;
-        border-radius: 50%;
-        border-right-color: #3cf;
-        border-top-color: #3cf;
-        box-sizing: border-box;
         content: "";
-        height: 16vmin;
-        left: 0;
         position: absolute;
-        top: 0;
-        width: 16vmin;
+        top: 7px;
+        right: 7px;
+        bottom: 7px;
+        left: 7px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        border-top-color: #FF79DA;
+        opacity: 0;
+        -webkit-animation: spinner 3s linear infinite;
+        animation: spinner 3s linear infinite;
     }
     &:after {
-        animation: spin 4s infinite linear;
-        border: solid 2vmin transparent;
-        border-radius: 50%;
-        border-right-color: #6ff;
-        border-top-color: #6ff;
-        box-sizing: border-box;
         content: "";
-        height: 12vmin;
-        left: 2vmin;
         position: absolute;
-        top: 2vmin;
-        width: 12vmin;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        border-top-color: #99E2D0;
+        -webkit-animation: spinner 1.5s linear infinite;
+        animation: spinner 1.5s linear infinite;
     }
 }
 
 .indexPage{
     opacity: 1;
-    animation: pageAppear 4s;
+    animation: pageAppear 5s;
 }
 
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    z-index: 1;
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+    animation-fill-mode: initial;
+    display: none;
     }
+}
+@keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    z-index: 1;
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+    display: none;
+        }
 }
 
 @keyframes pageAppear {
