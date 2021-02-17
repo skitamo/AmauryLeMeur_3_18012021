@@ -101,8 +101,9 @@ a {
   border: 2px solid transparent;
   border-top-color: #9356DC;
   border-radius: 50%;
-  -webkit-animation: spinner 2s linear infinite;
-  animation: spinner 2s linear infinite;
+  opacity: 0;
+  -webkit-animation: spinner 2s linear 3;
+  animation: spinner 2s linear 3;
 }
 .loader:before {
   content: "";
@@ -115,8 +116,8 @@ a {
   border-radius: 50%;
   border-top-color: #FF79DA;
   opacity: 0;
-  -webkit-animation: spinner 3s linear infinite;
-  animation: spinner 3s linear infinite;
+  -webkit-animation: spinner 3s linear 3;
+  animation: spinner 3s linear 3;
 }
 .loader:after {
   content: "";
@@ -128,42 +129,43 @@ a {
   border: 2px solid transparent;
   border-radius: 50%;
   border-top-color: #99E2D0;
-  -webkit-animation: spinner 1.5s linear infinite;
-  animation: spinner 1.5s linear infinite;
+  opacity: 0;
+  -webkit-animation: spinner 1.5s linear 3;
+  animation: spinner 1.5s linear 3;
 }
 
 .indexPage {
   opacity: 1;
-  animation: pageAppear 5s;
+  animation: pageAppear 6s;
 }
 
 @-webkit-keyframes spinner {
-  from {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    z-index: 1;
+    opacity: 1;
   }
-  to {
+  100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
     animation-fill-mode: initial;
-    display: none;
+    opacity: 1;
   }
 }
 @keyframes spinner {
-  from {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    z-index: 1;
+    opacity: 1;
   }
-  to {
+  100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
-    display: none;
+    opacity: 1;
   }
 }
 @keyframes pageAppear {
