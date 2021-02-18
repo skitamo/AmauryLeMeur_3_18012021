@@ -35,6 +35,7 @@
             margin: auto;
         }
     }
+    
     .coeurBox{
         font-size: 1.1em;
         padding-right: 20px;
@@ -48,6 +49,7 @@
         font-family: shrikhand, sans-serif;
         font-size: 1.7em;
     }
+
     h2{
         text-transform: uppercase;
         font-weight: 300;
@@ -56,12 +58,12 @@
         margin-top: 40px;
         @include tablette{
             max-width: 500px;
-            
             margin-left: auto;
             margin-right: auto;
         }
         
     }
+
     h2::after{
         content: "";
         display: block;
