@@ -1,10 +1,9 @@
-
-@import "utils/_mixins.scss";
+@import "utils/_variables.scss";
 
 @import "base/_reset.scss";
 @import "base/_typo.scss";
 
-@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
 @import "utils/_loader.scss";
 @import "utils/_animation-coeur.scss";
 @import "utils/_animation-cardAppear.scss";

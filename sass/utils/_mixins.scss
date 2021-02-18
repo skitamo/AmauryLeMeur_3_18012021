@@ -1,6 +1,3 @@
-$tablette : 600px;
-
-
 @mixin tablette {
     @media (min-width : $tablette){
 
