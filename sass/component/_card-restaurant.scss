@@ -26,16 +26,10 @@
         border-radius: 20px 20px 0 0;
     }
 
-    h3{
-        padding-top: 50px;
-        padding-bottom: 20px;
-        @include tablette{
-            width: 100%;
-        }
-    }
     p{
         font-size: 1.15em;
     }
+
     .indexRestaurant__explication{
         position: relative;
         top: -2px;

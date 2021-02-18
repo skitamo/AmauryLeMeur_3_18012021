@@ -442,15 +442,6 @@ a {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-.indexRestaurant__card h3 {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-@media (min-width: 600px) {
-  .indexRestaurant__card h3 {
-    width: 100%;
-  }
-}
 .indexRestaurant__card p {
   font-size: 1.15em;
 }
