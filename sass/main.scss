@@ -4,10 +4,9 @@
 @import "base/_reset.scss";
 @import "base/_typo.scss";
 
-@import "utils/_loader.scss";
-@import "utils/_animation-coeur.scss";
-@import "utils/_animation-cardAppear.scss";
-
+@import "component/_loader.scss";
+@import "component/_animation-coeur.scss";
+@import "component/_animation-cardAppear.scss";
 @import "component/_button.scss";
 @import "component/_cards-plats.scss";
 @import "component/_card-fonctionnement.scss";
