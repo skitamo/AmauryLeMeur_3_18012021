@@ -61,6 +61,11 @@ body {
   font-family: roboto, sans-serif;
 }
 
+h1 {
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
 h2 {
   font-weight: 500;
   font-size: 1.7em;
@@ -309,8 +314,9 @@ a {
 .cardPlat__col1 {
   width: 90%;
 }
-.cardPlat h4 {
+.cardPlat h3 {
   font-size: 1.1em;
+  font-weight: normal;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -568,7 +574,7 @@ footer i {
   padding-bottom: 50px;
   background-color: #f2f2f2;
 }
-.explorer h2 {
+.explorer h1 {
   width: 80%;
   margin: auto;
   padding-top: 40px;

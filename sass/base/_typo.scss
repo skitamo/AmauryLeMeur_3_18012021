@@ -5,23 +5,33 @@ body{
         margin: auto;
         box-shadow: 0 0 50px 10px rgb(180, 176, 176);
     }  
-} 
+}
+
 body{
     font-family: roboto, sans-serif;
     
 }
+
+h1 {
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
 h2 {
     font-weight: 500;
     font-size: 1.7em;
 }
+
 h3{
     font-size: 1.3em;
     font-weight: 500;
 }
- p{
+
+p{
      font-size: 1.2em;
      font-weight: 200;
 }
+
 .btn{
     font-size: 1.1em;
 }
@@ -29,6 +39,7 @@ h3{
 input{
     font-size: 1.1em;
 }
+
 a{
     text-decoration: none;
     color: inherit;
