@@ -10,8 +10,8 @@
     border-top-color: #9356DC;
     border-radius: 50%;
     opacity: 0;
-    -webkit-animation: spinner 2s linear 3;
     animation: spinner 2s linear 3;
+
     &:before {
         content: "";
         position: absolute;
@@ -23,9 +23,9 @@
         border-radius: 50%;
         border-top-color: #FF79DA;
         opacity: 0;
-        -webkit-animation: spinner 3s linear 3;
         animation: spinner 3s linear 3;
     }
+
     &:after {
         content: "";
         position: absolute;
@@ -37,7 +37,6 @@
         border-radius: 50%;
         border-top-color: #99E2D0;
         opacity: 0;
-        -webkit-animation: spinner 1.5s linear 3;
         animation: spinner 1.5s linear 3;
     }
 }
@@ -47,34 +46,18 @@
     animation: pageAppear 6s;
 }
 
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-    animation-fill-mode: initial;
-    opacity: 1;
-    }
-}
 @keyframes spinner {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 1;
   }
+
   100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-        opacity: 1;
-        }
+    transform: rotate(359deg);
+    transform: rotate(359deg);
+    opacity: 1;
+    }
 }
 
 @keyframes pageAppear {

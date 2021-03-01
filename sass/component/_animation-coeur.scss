@@ -4,10 +4,9 @@
     &__coeur{
         font-size: 1.5em;
         background: linear-gradient(45deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);    
-        background-clip: text;
-        -webkit-background-clip: text;
+        background-clip: content-box;
+        -webkit-background-clip: content-box;
         color: transparent;
-
         &::after{
             content: '\f004';
             font-family: FontAwesome;

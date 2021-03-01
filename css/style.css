@@ -107,7 +107,6 @@ a {
   border-top-color: #9356DC;
   border-radius: 50%;
   opacity: 0;
-  -webkit-animation: spinner 2s linear 3;
   animation: spinner 2s linear 3;
 }
 .loader:before {
@@ -121,7 +120,6 @@ a {
   border-radius: 50%;
   border-top-color: #FF79DA;
   opacity: 0;
-  -webkit-animation: spinner 3s linear 3;
   animation: spinner 3s linear 3;
 }
 .loader:after {
@@ -135,7 +133,6 @@ a {
   border-radius: 50%;
   border-top-color: #99E2D0;
   opacity: 0;
-  -webkit-animation: spinner 1.5s linear 3;
   animation: spinner 1.5s linear 3;
 }
 
@@ -144,31 +141,14 @@ a {
   animation: pageAppear 6s;
 }
 
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-    animation-fill-mode: initial;
-    opacity: 1;
-  }
-}
 @keyframes spinner {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
   }
   100% {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
     opacity: 1;
   }
@@ -187,8 +167,8 @@ a {
 .coeurBox__coeur {
   font-size: 1.5em;
   background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
+  background-clip: content-box;
+  -webkit-background-clip: content-box;
   color: transparent;
 }
 .coeurBox__coeur::after {
